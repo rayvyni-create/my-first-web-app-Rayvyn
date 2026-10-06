@@ -1,86 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rayvyn Ignatius A/L Raymand | Human Resource Operations</title>
+  <meta name="description" content="Portfolio of Rayvyn Ignatius A/L Raymand, HR Operations and Talent Management aspirant based in Selangor, Malaysia.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <h1>Rayvyn</h1>
-      <p>Web Developer & Creative Thinker</p>
-    </div>
-  </header>
+
+  <div class="progress-bar" id="progressBar"></div>
 
   <nav class="navbar">
-    <div class="container">
-      <ul class="nav-links">
-        <li><a href="#about">About Me</a></li>
+    <div class="container nav-inner">
+      <a href="#home" class="brand">RR</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </nav>
 
-  <main class="container">
-    <section id="about" class="section">
-      <h2>About Me</h2>
-      <p>
-        Welcome to my portfolio! I'm a passionate web developer with a love for creating
-        beautiful, functional websites. I enjoy learning new technologies and solving
-        complex problems through creative coding solutions. When I'm not coding, you can
-        find me exploring new design trends and contributing to open-source projects.
-      </p>
-    </section>
+  <header class="hero" id="home">
+    <div class="container hero-inner">
+      <img class="photo" src="photo.jpg" alt="Portrait of Rayvyn Ignatius A/L Raymand" onerror="this.remove()">
+      <div>
+        <h1>Rayvyn Ignatius A/L Raymand</h1>
+        <p class="role"><span id="typed">Human Resource Operations</span><span class="cursor">|</span></p>
+        <p class="location">Cheras, Selangor, Malaysia</p>
+        <div class="hero-actions">
+          <a class="contact-button" href="#experience">View experience</a>
+          <a class="contact-button ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+    </div>
+  </header>
 
-    <section id="skills" class="section">
+  <section class="section" id="about">
+    <div class="container">
+      <h2>Career Aspiration</h2>
+      <p class="lead">Aspiring Talent Management and Organisational Development professional with HR Operations experience at UOB Malaysia, seeking to specialise in succession planning, talent development and workforce planning. I aim to apply my psychology background to identify, develop and retain talent while supporting stronger leadership pipelines and sustainable organisational performance.</p>
+    </div>
+  </section>
+
+  <section class="section alt" id="experience">
+    <div class="container">
+      <h2>Professional Experience</h2>
+
+      <div class="tabs" role="tablist">
+        <button class="tab active" role="tab" aria-selected="true" data-tab="uob">UOB Malaysia</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="mercer">Mercer Malaysia</button>
+      </div>
+
+      <article class="tab-panel active" id="uob" role="tabpanel">
+        <div class="job-meta">
+          <h3>United Overseas Bank (Malaysia) Berhad</h3>
+          <span class="date">March 2026 – March 2027</span>
+        </div>
+        <p class="job-title">Financial Sector Talent Enrichment Programme – Human Resource Operations</p>
+        <ul class="bullets">
+          <li>Managed end-to-end employee cessation for 80+ employees per month, coordinating with HRBPs, functional managers, Payroll, leave treatment, short notice, benefits and approvals to support timely and accurate exit processing.</li>
+          <li>Supported Talent Acquisition and campus recruitment initiatives across UOB Malaysia, screening candidates for roles across Compliance &amp; Risk, Wholesale Banking, Personal Financial Services, and Channels &amp; Digitalisation Operations, while engaging prospective talent at GRADUAN and MOHE career fairs and promoting UOB’s early career pathways and development programmes.</li>
+          <li>Supported the employee benefits team in building the assessment and selection of 5 external Third Party Administrator vendors by developing and organising a structured scoring matrix covering capabilities, digital solutions, governance, service delivery, network strength, risk and commercial criteria to facilitate evidence-based vendor evaluation.</li>
+          <li>Prepared a Board-level HR briefing for the HR Country Function Head on the selected TPA, synthesising assessment outcomes, market considerations, &amp; service-level expectations to support senior governance discussions.</li>
+          <li>Developed executive-level HR presentations on payroll process amendments, partnering with the Payroll Team Leader and VP of HR Operations to evaluate operational implications and recommend a revised pay-date structure for smoother payroll, off-cycle processing and prepared materials for regional HR leadership review in Singapore.</li>
+          <li>Selected to participate in an intensive graduate development programme delivered in collaboration with Asian Banking School (ABS), scheduled for October–December 2026, covering Banking &amp; Insurance, Corporate Communication with Impact, Digital &amp; AI Banking, Executive Presentation in the Financial Industry and Leadership Development, designed to strengthen financial-sector knowledge, business communication, leadership and stakeholder engagement capabilities.</li>
+        </ul>
+      </article>
+
+      <article class="tab-panel" id="mercer" role="tabpanel">
+        <div class="job-meta">
+          <h3>Mercer Malaysia Sdn. Bhd.</h3>
+          <span class="date">July 2025 – December 2025</span>
+        </div>
+        <p class="job-title">HR Consulting Intern (Global Career Products Department)</p>
+        <ul class="bullets">
+          <li>Conducted remuneration and compensation analysis for 60+ listed companies, contributing to Mercer’s annual Board and C-suite benchmarking report and supporting the development of a new rewards product for clients.</li>
+          <li>Executed job matching and role alignment analyses using Mercer’s Global Job Catalogue, supporting accurate job benchmarking and providing analytical justification for client queries.</li>
+          <li>Conducted labour market and workforce research using DOSM, EPF and HR publications, analysing workforce availability, labour costs, turnover trends and HR policy developments to support data-driven client recommendations.</li>
+          <li>Supported the delivery of 4 HRDC-claimable Learning &amp; Development programmes, coordinating participants, training materials and on-site logistics to ensure effective programme execution.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="education">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="card">
+        <h3>Bachelor of Science (Honours) in Psychology</h3>
+        <p class="job-title">University of Malaya-Wales · 2021 – 2024</p>
+        <ul class="bullets">
+          <li>Graduated with First-Class Honours, CGPA 3.71</li>
+          <li>Dual Award with University of Wales Trinity Saint David, UK</li>
+          <li>Faculty’s Best Student Award for 9<sup>th</sup> Convocation 2024</li>
+          <li>Dean’s List for all Academic Semesters</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="skills">
+    <div class="container">
       <h2>Skills</h2>
       <div class="skills-grid">
         <div class="skill-card">
-          <h3>HTML</h3>
-          <p>Semantic markup and accessibility</p>
+          <h3>Data Extraction</h3>
+          <p>Total remuneration data from annual reports and corporate governance reports</p>
         </div>
         <div class="skill-card">
-          <h3>CSS</h3>
-          <p>Responsive design and animations</p>
+          <h3>Microsoft Excel</h3>
+          <p>Fundamental formulas, shortcuts and pivot tables</p>
         </div>
         <div class="skill-card">
-          <h3>JavaScript</h3>
-          <p>Interactivity and DOM manipulation</p>
+          <h3>Market Research</h3>
+          <p>Sourcing external market data from various search engines</p>
         </div>
         <div class="skill-card">
-          <h3>Web Design</h3>
-          <p>UI/UX principles and best practices</p>
+          <h3>Workforce Reporting</h3>
+          <p>Remuneration analysis for Mercer’s new Board of Directors benchmarking product</p>
         </div>
         <div class="skill-card">
-          <h3>Git & GitHub</h3>
-          <p>Version control and collaboration</p>
-        </div>
-        <div class="skill-card">
-          <h3>Problem Solving</h3>
-          <p>Debugging and optimization</p>
+          <h3>Workday Analysis</h3>
+          <p>Maintained employee lifecycle processes and relevant reporting</p>
         </div>
       </div>
-    </section>
 
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <p>I'd love to hear from you! Feel free to reach out through any of these channels:</p>
-      <div class="contact-links">
-        <a href="mailto:hello@example.com" class="contact-button">Email Me</a>
-        <a href="https://github.com" class="contact-button" target="_blank">GitHub</a>
-        <a href="https://linkedin.com" class="contact-button" target="_blank">LinkedIn</a>
+      <h3 class="sub-heading">Languages</h3>
+      <div class="chips">
+        <span class="chip">English · Speaking, Writing &amp; Reading</span>
+        <span class="chip">Bahasa Melayu · Speaking, Writing &amp; Reading</span>
+        <span class="chip">Tamil · Speaking</span>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p class="lead">Open to talent management and organisational development opportunities.</p>
+      <div class="contact-links">
+        <a class="contact-button" href="mailto:rayvyni@gmail.com">Email me</a>
+        <button class="contact-button ghost" id="copyEmail" type="button">Copy email</button>
+        <a class="contact-button ghost" href="tel:+60124335417">+6012-4335417</a>
+        <a class="contact-button ghost" href="https://www.linkedin.com/in/Rayvyn-Ignatius-Raymand" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </section>
 
   <footer class="footer">
-    <div class="container">
-      <p>&copy; 2026 Van Gogh</p>
-    </div>
+    <p>© 2026 Rayvyn Ignatius A/L Raymand</p>
   </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
 
   <script src="script.js"></script>
 </body>
